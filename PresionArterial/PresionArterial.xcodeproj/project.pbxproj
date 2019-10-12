@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E86DA186235162A50017FC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA185235162A50017FC53 /* AppDelegate.swift */; };
+		E86DA18B235162A50017FC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86DA189235162A50017FC53 /* Main.storyboard */; };
+		E86DA18E235162A50017FC53 /* PresionArterial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E86DA18C235162A50017FC53 /* PresionArterial.xcdatamodeld */; };
+		E86DA190235162AB0017FC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86DA18F235162AB0017FC53 /* Assets.xcassets */; };
+		E86DA193235162AB0017FC53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86DA191235162AB0017FC53 /* LaunchScreen.storyboard */; };
+		E86DA19B235175BC0017FC53 /* ViewControllerRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA19A235175BC0017FC53 /* ViewControllerRegistro.swift */; };
+		E86DA19D235175E70017FC53 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA19C235175E70017FC53 /* ViewControllerLogin.swift */; };
+		E86DA19F235176CA0017FC53 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA19E235176CA0017FC53 /* Usuario.swift */; };
+		E86DA1C123524F7F0017FC53 /* TableViewControllerMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C023524F7F0017FC53 /* TableViewControllerMeasurement.swift */; };
+		E86DA1C323524FBF0017FC53 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C223524FBF0017FC53 /* Measurement.swift */; };
+		E86DA1C523526B610017FC53 /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C423526B610017FC53 /* ViewControllerInfo.swift */; };
+		E86DA1C7235274430017FC53 /* ViewControllerAddMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C6235274430017FC53 /* ViewControllerAddMeasure.swift */; };
+		E86DA1C92352795F0017FC53 /* ViewControllerInfoMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C82352795F0017FC53 /* ViewControllerInfoMeasurement.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E86DA182235162A50017FC53 /* PresionArterial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresionArterial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86DA185235162A50017FC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E86DA18A235162A50017FC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E86DA18D235162A50017FC53 /* PresionArterial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PresionArterial.xcdatamodel; sourceTree = "<group>"; };
+		E86DA18F235162AB0017FC53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E86DA192235162AB0017FC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E86DA194235162AB0017FC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E86DA19A235175BC0017FC53 /* ViewControllerRegistro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistro.swift; sourceTree = "<group>"; };
+		E86DA19C235175E70017FC53 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerLogin.swift; path = Assets.xcassets/ViewControllerLogin.swift; sourceTree = "<group>"; };
+		E86DA19E235176CA0017FC53 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		E86DA1C023524F7F0017FC53 /* TableViewControllerMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerMeasurement.swift; sourceTree = "<group>"; };
+		E86DA1C223524FBF0017FC53 /* Measurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		E86DA1C423526B610017FC53 /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
+		E86DA1C6235274430017FC53 /* ViewControllerAddMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAddMeasure.swift; sourceTree = "<group>"; };
+		E86DA1C82352795F0017FC53 /* ViewControllerInfoMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfoMeasurement.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E86DA17F235162A50017FC53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E86DA179235162A50017FC53 = {
+			isa = PBXGroup;
+			children = (
+				E86DA184235162A50017FC53 /* PresionArterial */,
+				E86DA183235162A50017FC53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E86DA183235162A50017FC53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E86DA182235162A50017FC53 /* PresionArterial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E86DA184235162A50017FC53 /* PresionArterial */ = {
+			isa = PBXGroup;
+			children = (
+				E86DA185235162A50017FC53 /* AppDelegate.swift */,
+				E86DA189235162A50017FC53 /* Main.storyboard */,
+				E86DA1C82352795F0017FC53 /* ViewControllerInfoMeasurement.swift */,
+				E86DA1C6235274430017FC53 /* ViewControllerAddMeasure.swift */,
+				E86DA1C423526B610017FC53 /* ViewControllerInfo.swift */,
+				E86DA1C023524F7F0017FC53 /* TableViewControllerMeasurement.swift */,
+				E86DA1C223524FBF0017FC53 /* Measurement.swift */,
+				E86DA19E235176CA0017FC53 /* Usuario.swift */,
+				E86DA19C235175E70017FC53 /* ViewControllerLogin.swift */,
+				E86DA19A235175BC0017FC53 /* ViewControllerRegistro.swift */,
+				E86DA18F235162AB0017FC53 /* Assets.xcassets */,
+				E86DA191235162AB0017FC53 /* LaunchScreen.storyboard */,
+				E86DA194235162AB0017FC53 /* Info.plist */,
+				E86DA18C235162A50017FC53 /* PresionArterial.xcdatamodeld */,
+			);
+			path = PresionArterial;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E86DA181235162A50017FC53 /* PresionArterial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E86DA197235162AB0017FC53 /* Build configuration list for PBXNativeTarget "PresionArterial" */;
+			buildPhases = (
+				E86DA17E235162A50017FC53 /* Sources */,
+				E86DA17F235162A50017FC53 /* Frameworks */,
+				E86DA180235162A50017FC53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PresionArterial;
+			productName = PresionArterial;
+			productReference = E86DA182235162A50017FC53 /* PresionArterial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E86DA17A235162A50017FC53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Gustavo Paez";
+				TargetAttributes = {
+					E86DA181235162A50017FC53 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = E86DA17D235162A50017FC53 /* Build configuration list for PBXProject "PresionArterial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E86DA179235162A50017FC53;
+			productRefGroup = E86DA183235162A50017FC53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E86DA181235162A50017FC53 /* PresionArterial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E86DA180235162A50017FC53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DA193235162AB0017FC53 /* LaunchScreen.storyboard in Resources */,
+				E86DA190235162AB0017FC53 /* Assets.xcassets in Resources */,
+				E86DA18B235162A50017FC53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E86DA17E235162A50017FC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86DA1C123524F7F0017FC53 /* TableViewControllerMeasurement.swift in Sources */,
+				E86DA19D235175E70017FC53 /* ViewControllerLogin.swift in Sources */,
+				E86DA1C7235274430017FC53 /* ViewControllerAddMeasure.swift in Sources */,
+				E86DA18E235162A50017FC53 /* PresionArterial.xcdatamodeld in Sources */,
+				E86DA19B235175BC0017FC53 /* ViewControllerRegistro.swift in Sources */,
+				E86DA1C92352795F0017FC53 /* ViewControllerInfoMeasurement.swift in Sources */,
+				E86DA19F235176CA0017FC53 /* Usuario.swift in Sources */,
+				E86DA186235162A50017FC53 /* AppDelegate.swift in Sources */,
+				E86DA1C523526B610017FC53 /* ViewControllerInfo.swift in Sources */,
+				E86DA1C323524FBF0017FC53 /* Measurement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E86DA189235162A50017FC53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86DA18A235162A50017FC53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E86DA191235162AB0017FC53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E86DA192235162AB0017FC53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E86DA195235162AB0017FC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E86DA196235162AB0017FC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E86DA198235162AB0017FC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PresionArterial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = A01039751.PresionArterial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E86DA199235162AB0017FC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PresionArterial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = A01039751.PresionArterial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E86DA17D235162A50017FC53 /* Build configuration list for PBXProject "PresionArterial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DA195235162AB0017FC53 /* Debug */,
+				E86DA196235162AB0017FC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E86DA197235162AB0017FC53 /* Build configuration list for PBXNativeTarget "PresionArterial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E86DA198235162AB0017FC53 /* Debug */,
+				E86DA199235162AB0017FC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E86DA18C235162A50017FC53 /* PresionArterial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E86DA18D235162A50017FC53 /* PresionArterial.xcdatamodel */,
+			);
+			currentVersion = E86DA18D235162A50017FC53 /* PresionArterial.xcdatamodel */;
+			path = PresionArterial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E86DA17A235162A50017FC53 /* Project object */;
+}
