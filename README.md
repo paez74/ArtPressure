@@ -21,7 +21,7 @@ they may have. We mainly take into account any kind of hearth disease and diabet
 | ------------------------------ | ------------------------ | ------------------------------------------ |
 | Rubén Humberto Garza Hernández | rubengarzah@hotmail.com  | Developer                                  |
 | Jesús Alfredo Mejía Gil        | jesmga24@gmail.com       | Developer                                  |
-| Rubén Humberto Garza Hernández | rubengarzah@hotmail.com  | Developer                                  |
+| Gustavo Paez Villalobos        | paez74@live.com.mx.      | Developer                                  |
 
 
 ### Management tools
