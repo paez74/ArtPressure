@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0613A44F-6718-4D35-8848-94A43FC7A370</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>0613A44F-6718-4D35-8848-94A43FC7A370.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PresionArterial project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PresionArterial</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PresionArterial</string>
+			<key>timeStartedRecording</key>
+			<real>592712323.44411695</real>
+			<key>timeStoppedRecording</key>
+			<real>592712352.11661804</real>
+			<key>title</key>
+			<string>Debug PresionArterial</string>
+			<key>uniqueIdentifier</key>
+			<string>0613A44F-6718-4D35-8848-94A43FC7A370</string>
+		</dict>
+		<key>402B6E28-613F-4DC3-BFBC-5FAA7D2CBF80</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>402B6E28-613F-4DC3-BFBC-5FAA7D2CBF80.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PresionArterial project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PresionArterial</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PresionArterial</string>
+			<key>timeStartedRecording</key>
+			<real>592711636.17968094</real>
+			<key>timeStoppedRecording</key>
+			<real>592711746.29220605</real>
+			<key>title</key>
+			<string>Debug PresionArterial</string>
+			<key>uniqueIdentifier</key>
+			<string>402B6E28-613F-4DC3-BFBC-5FAA7D2CBF80</string>
+		</dict>
+		<key>44526435-B9D4-450A-BB5C-3B48951D4A41</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>44526435-B9D4-450A-BB5C-3B48951D4A41.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PresionArterial project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PresionArterial</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PresionArterial</string>
+			<key>timeStartedRecording</key>
+			<real>592712094.262851</real>
+			<key>timeStoppedRecording</key>
+			<real>592712323.56313801</real>
+			<key>title</key>
+			<string>Debug PresionArterial</string>
+			<key>uniqueIdentifier</key>
+			<string>44526435-B9D4-450A-BB5C-3B48951D4A41</string>
+		</dict>
+		<key>5219DE0B-64DB-42E8-995A-F60474969906</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5219DE0B-64DB-42E8-995A-F60474969906.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PresionArterial project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PresionArterial</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PresionArterial</string>
+			<key>timeStartedRecording</key>
+			<real>592712355.28091705</real>
+			<key>timeStoppedRecording</key>
+			<real>592712437.58730102</real>
+			<key>title</key>
+			<string>Debug PresionArterial</string>
+			<key>uniqueIdentifier</key>
+			<string>5219DE0B-64DB-42E8-995A-F60474969906</string>
+		</dict>
+		<key>985EF5C3-D5E4-48C4-99F4-D30A6E1A93F1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>985EF5C3-D5E4-48C4-99F4-D30A6E1A93F1.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PresionArterial project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PresionArterial</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PresionArterial</string>
+			<key>timeStartedRecording</key>
+			<real>592711951.660918</real>
+			<key>timeStoppedRecording</key>
+			<real>592712094.50064695</real>
+			<key>title</key>
+			<string>Debug PresionArterial</string>
+			<key>uniqueIdentifier</key>
+			<string>985EF5C3-D5E4-48C4-99F4-D30A6E1A93F1</string>
+		</dict>
+		<key>E219EB9E-E2A8-49E0-B940-14C6D5189F74</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>E219EB9E-E2A8-49E0-B940-14C6D5189F74.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PresionArterial project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PresionArterial</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PresionArterial</string>
+			<key>timeStartedRecording</key>
+			<real>592711805.14332199</real>
+			<key>timeStoppedRecording</key>
+			<real>592711946.90735304</real>
+			<key>title</key>
+			<string>Debug PresionArterial</string>
+			<key>uniqueIdentifier</key>
+			<string>E219EB9E-E2A8-49E0-B940-14C6D5189F74</string>
+		</dict>
+		<key>F0676E7A-71AD-491C-9988-81CA73337316</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F0676E7A-71AD-491C-9988-81CA73337316.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>PresionArterial project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>PresionArterial</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug PresionArterial</string>
+			<key>timeStartedRecording</key>
+			<real>592711746.43676198</real>
+			<key>timeStoppedRecording</key>
+			<real>592711805.07676399</real>
+			<key>title</key>
+			<string>Debug PresionArterial</string>
+			<key>uniqueIdentifier</key>
+			<string>F0676E7A-71AD-491C-9988-81CA73337316</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,476 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewControllerLogin"
+provides-nominal:
+- "15PresionArterial19ViewControllerLoginC"
+provides-member:
+- ["15PresionArterial19ViewControllerLoginC", ""]
+provides-dynamic-lookup:
+- "prepare"
+- "unwindApplication"
+- "unwindRegistro"
+- "viewDidLoad"
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "DateFormatter"
+- "UIStoryboardSegue"
+- !private "UITabBarController"
+- "UIViewController"
+- "UserRegister"
+- "Usuario"
+- !private "ViewControllerInfo"
+- "ViewControllerLogin"
+- !private "ViewControllerRegistro"
+- "Void"
+- !private "print"
+depends-member:
+- !private ["Sa", "subscript"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "DateFormatter"]
+- !private ["s7CVarArgP", "Usuario"]
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "addUser"]
+- !private ["s7CVarArgP", "bday"]
+- !private ["s7CVarArgP", "date"]
+- !private ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "destination"]
+- !private ["s7CVarArgP", "email"]
+- !private ["s7CVarArgP", "identifier"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "user"]
+- !private ["s7CVarArgP", "username"]
+- !private ["s7CVarArgP", "viewControllers"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
+- !private ["s28CustomDebugStringConvertibleP", "Usuario"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "addUser"]
+- !private ["s28CustomDebugStringConvertibleP", "bday"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "email"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "user"]
+- !private ["s28CustomDebugStringConvertibleP", "username"]
+- !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "DateFormatter"]
+- !private ["s23CustomStringConvertibleP", "Usuario"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "addUser"]
+- !private ["s23CustomStringConvertibleP", "bday"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "email"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "user"]
+- !private ["s23CustomStringConvertibleP", "username"]
+- !private ["s23CustomStringConvertibleP", "viewControllers"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["So15NSDateFormatterC", "date"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
+- !private ["Se", "subscript"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "DateFormatter"]
+- !private ["SQ", "Usuario"]
+- ["SQ", ""]
+- ["SQ", "addUser"]
+- !private ["SQ", "bday"]
+- !private ["SQ", "date"]
+- !private ["SQ", "dateFormat"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "destination"]
+- !private ["SQ", "email"]
+- !private ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "name"]
+- !private ["SQ", "print"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "user"]
+- !private ["SQ", "username"]
+- !private ["SQ", "viewControllers"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["So11NSFormatterC", "date"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["SH", "DateFormatter"]
+- !private ["SH", "Usuario"]
+- ["SH", ""]
+- ["SH", "addUser"]
+- !private ["SH", "bday"]
+- !private ["SH", "date"]
+- !private ["SH", "dateFormat"]
+- !private ["SH", "delegate"]
+- !private ["SH", "destination"]
+- !private ["SH", "email"]
+- !private ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "name"]
+- !private ["SH", "print"]
+- !private ["SH", "subscript"]
+- !private ["SH", "user"]
+- !private ["SH", "username"]
+- !private ["SH", "viewControllers"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "DateFormatter"]
+- !private ["So8NSCodingP", "Usuario"]
+- ["So8NSCodingP", ""]
+- ["So8NSCodingP", "addUser"]
+- !private ["So8NSCodingP", "date"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "user"]
+- !private ["So8NSCodingP", "viewControllers"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So9NSCopyingP", "date"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "DateFormatter"]
+- !private ["So26NSExtensionRequestHandlingP", "Usuario"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- ["So26NSExtensionRequestHandlingP", "addUser"]
+- !private ["So26NSExtensionRequestHandlingP", "delegate"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "user"]
+- !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So8NSObjectC", "DateFormatter"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- !private ["So8NSObjectC", "UITabBarController"]
+- ["So8NSObjectC", "Usuario"]
+- !private ["So8NSObjectC", "ViewControllerInfo"]
+- !private ["So8NSObjectC", "ViewControllerRegistro"]
+- ["So8NSObjectC", "Void"]
+- ["So8NSObjectC", "addUser"]
+- !private ["So8NSObjectC", "bday"]
+- !private ["So8NSObjectC", "date"]
+- !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "destination"]
+- !private ["So8NSObjectC", "email"]
+- !private ["So8NSObjectC", "identifier"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "name"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "unwindApplication"]
+- ["So8NSObjectC", "unwindRegistro"]
+- !private ["So8NSObjectC", "user"]
+- !private ["So8NSObjectC", "username"]
+- !private ["So8NSObjectC", "viewControllers"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "DateFormatter"]
+- !private ["So8NSObjectP", "Usuario"]
+- ["So8NSObjectP", ""]
+- ["So8NSObjectP", "addUser"]
+- !private ["So8NSObjectP", "bday"]
+- !private ["So8NSObjectP", "date"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "destination"]
+- !private ["So8NSObjectP", "email"]
+- !private ["So8NSObjectP", "identifier"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "user"]
+- !private ["So8NSObjectP", "username"]
+- !private ["So8NSObjectP", "viewControllers"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
+- !private ["ST", "subscript"]
+- !private ["So21UIAppearanceContainerP", "DateFormatter"]
+- !private ["So21UIAppearanceContainerP", "Usuario"]
+- ["So21UIAppearanceContainerP", ""]
+- ["So21UIAppearanceContainerP", "addUser"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "user"]
+- !private ["So21UIAppearanceContainerP", "viewControllers"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "DateFormatter"]
+- !private ["So18UIContentContainerP", "Usuario"]
+- ["So18UIContentContainerP", ""]
+- ["So18UIContentContainerP", "addUser"]
+- !private ["So18UIContentContainerP", "delegate"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "user"]
+- !private ["So18UIContentContainerP", "viewControllers"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "DateFormatter"]
+- !private ["So18UIFocusEnvironmentP", "Usuario"]
+- ["So18UIFocusEnvironmentP", ""]
+- ["So18UIFocusEnvironmentP", "addUser"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "user"]
+- !private ["So18UIFocusEnvironmentP", "viewControllers"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "DateFormatter"]
+- !private ["So30UIPasteConfigurationSupportingP", "Usuario"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So30UIPasteConfigurationSupportingP", "addUser"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "user"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "DateFormatter"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- !private ["So11UIResponderC", "UITabBarController"]
+- ["So11UIResponderC", "Usuario"]
+- !private ["So11UIResponderC", "ViewControllerInfo"]
+- !private ["So11UIResponderC", "ViewControllerRegistro"]
+- ["So11UIResponderC", "Void"]
+- ["So11UIResponderC", "addUser"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "prepare"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "unwindApplication"]
+- ["So11UIResponderC", "unwindRegistro"]
+- !private ["So11UIResponderC", "user"]
+- !private ["So11UIResponderC", "viewControllers"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "DateFormatter"]
+- !private ["So30UIResponderStandardEditActionsP", "Usuario"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- ["So30UIResponderStandardEditActionsP", "addUser"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "user"]
+- !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "DateFormatter"]
+- !private ["So16UIStateRestoringP", "Usuario"]
+- ["So16UIStateRestoringP", ""]
+- ["So16UIStateRestoringP", "addUser"]
+- !private ["So16UIStateRestoringP", "delegate"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "user"]
+- !private ["So16UIStateRestoringP", "viewControllers"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So17UIStoryboardSegueC", "destination"]
+- !private ["So17UIStoryboardSegueC", "identifier"]
+- !private ["So18UITabBarControllerC", "viewControllers"]
+- !private ["So16UITabBarDelegateP", "viewControllers"]
+- !private ["So18UITraitEnvironmentP", "DateFormatter"]
+- !private ["So18UITraitEnvironmentP", "Usuario"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So18UITraitEnvironmentP", "addUser"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "user"]
+- !private ["So18UITraitEnvironmentP", "viewControllers"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "DateFormatter"]
+- !private ["So23UIUserActivityRestoringP", "Usuario"]
+- ["So23UIUserActivityRestoringP", ""]
+- ["So23UIUserActivityRestoringP", "addUser"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "user"]
+- !private ["So23UIUserActivityRestoringP", "viewControllers"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So16UIViewControllerC", "DateFormatter"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
+- !private ["So16UIViewControllerC", "UITabBarController"]
+- ["So16UIViewControllerC", "Usuario"]
+- !private ["So16UIViewControllerC", "ViewControllerInfo"]
+- !private ["So16UIViewControllerC", "ViewControllerRegistro"]
+- ["So16UIViewControllerC", "Void"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "addUser"]
+- !private ["So16UIViewControllerC", "delegate"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "prepare"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "unwindApplication"]
+- ["So16UIViewControllerC", "unwindRegistro"]
+- !private ["So16UIViewControllerC", "user"]
+- !private ["So16UIViewControllerC", "viewControllers"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["15PresionArterial12UserRegisterP", "DateFormatter"]
+- !private ["15PresionArterial12UserRegisterP", "Usuario"]
+- ["15PresionArterial12UserRegisterP", ""]
+- ["15PresionArterial12UserRegisterP", "addUser"]
+- !private ["15PresionArterial12UserRegisterP", "print"]
+- !private ["15PresionArterial7UsuarioC", "bday"]
+- !private ["15PresionArterial7UsuarioC", "email"]
+- !private ["15PresionArterial7UsuarioC", "init"]
+- !private ["15PresionArterial7UsuarioC", "name"]
+- !private ["15PresionArterial7UsuarioC", "username"]
+- !private ["15PresionArterial18ViewControllerInfoC", "user"]
+- !private ["15PresionArterial19ViewControllerLoginC", "DateFormatter"]
+- ["15PresionArterial19ViewControllerLoginC", "UIStoryboardSegue"]
+- !private ["15PresionArterial19ViewControllerLoginC", "UITabBarController"]
+- ["15PresionArterial19ViewControllerLoginC", "Usuario"]
+- !private ["15PresionArterial19ViewControllerLoginC", "ViewControllerInfo"]
+- !private ["15PresionArterial19ViewControllerLoginC", "ViewControllerRegistro"]
+- ["15PresionArterial19ViewControllerLoginC", "Void"]
+- ["15PresionArterial19ViewControllerLoginC", "addUser"]
+- ["15PresionArterial19ViewControllerLoginC", "deinit"]
+- ["15PresionArterial19ViewControllerLoginC", "init"]
+- ["15PresionArterial19ViewControllerLoginC", "prepare"]
+- !private ["15PresionArterial19ViewControllerLoginC", "print"]
+- ["15PresionArterial19ViewControllerLoginC", "unwindApplication"]
+- ["15PresionArterial19ViewControllerLoginC", "unwindRegistro"]
+- ["15PresionArterial19ViewControllerLoginC", "viewDidLoad"]
+- !private ["15PresionArterial22ViewControllerRegistroC", "delegate"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Usuario"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "addUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bday"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "email"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "user"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "username"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "So15NSDateFormatterC"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "So11NSFormatterC"
+- "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
+- !private "So18UITabBarControllerC"
+- !private "So16UITabBarDelegateP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- "15PresionArterial12UserRegisterP"
+- !private "15PresionArterial7UsuarioC"
+- !private "15PresionArterial18ViewControllerInfoC"
+- "15PresionArterial19ViewControllerLoginC"
+- !private "15PresionArterial22ViewControllerRegistroC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "054c17570d88ee651f0589d13f4556f5"

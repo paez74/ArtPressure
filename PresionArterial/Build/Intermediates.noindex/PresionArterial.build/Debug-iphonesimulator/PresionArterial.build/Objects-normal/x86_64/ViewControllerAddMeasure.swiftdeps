@@ -1,0 +1,659 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MeasurementRegister"
+- "ViewControllerAddMeasure"
+provides-nominal:
+- "15PresionArterial19MeasurementRegisterP"
+- "15PresionArterial24ViewControllerAddMeasureC"
+provides-member:
+- ["15PresionArterial19MeasurementRegisterP", ""]
+- ["15PresionArterial24ViewControllerAddMeasureC", ""]
+provides-dynamic-lookup:
+- "addMeasurement"
+- "tfDistolic"
+- "tfSystolic"
+- "tfWeight"
+- "tvNotes"
+- "viewDidLoad"
+depends-top-level:
+- !private "=="
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Date"
+- !private "Double"
+- !private "Int"
+- "Measurement"
+- "MeasurementRegister"
+- !private "StringLiteralType"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- "UITextField"
+- "UITextView"
+- "UIViewController"
+- "ViewControllerAddMeasure"
+- "Void"
+- !private "||"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["SB", "init"]
+- !private ["Sz", "init"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Date"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "Measurement"]
+- !private ["s7CVarArgP", "UIAlertAction"]
+- !private ["s7CVarArgP", "UIAlertController"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addAction"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "popViewController"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "tfDistolic"]
+- !private ["s7CVarArgP", "tfSystolic"]
+- !private ["s7CVarArgP", "tfWeight"]
+- !private ["s7CVarArgP", "validateData"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Date"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "Measurement"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
+- !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addAction"]
+- !private ["s28CustomDebugStringConvertibleP", "addMeasure"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "popViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "tfDistolic"]
+- !private ["s28CustomDebugStringConvertibleP", "tfSystolic"]
+- !private ["s28CustomDebugStringConvertibleP", "tfWeight"]
+- !private ["s28CustomDebugStringConvertibleP", "validateData"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "addMeasure"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s23CustomStringConvertibleP", "Date"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "Measurement"]
+- !private ["s23CustomStringConvertibleP", "UIAlertAction"]
+- !private ["s23CustomStringConvertibleP", "UIAlertController"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addAction"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "popViewController"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "tfDistolic"]
+- !private ["s23CustomStringConvertibleP", "tfSystolic"]
+- !private ["s23CustomStringConvertibleP", "tfWeight"]
+- !private ["s23CustomStringConvertibleP", "validateData"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["Se", "addMeasure"]
+- !private ["Se", "init"]
+- !private ["Se", "text"]
+- !private ["Sd", "init"]
+- !private ["SE", "addMeasure"]
+- !private ["SE", "init"]
+- !private ["SE", "text"]
+- !private ["SQ", "Date"]
+- !private ["SQ", "Double"]
+- !private ["SQ", "Int"]
+- !private ["SQ", "Measurement"]
+- !private ["SQ", "UIAlertAction"]
+- !private ["SQ", "UIAlertController"]
+- ["SQ", ""]
+- !private ["SQ", "addAction"]
+- !private ["SQ", "addMeasure"]
+- !private ["SQ", "alert"]
+- !private ["SQ", "cancel"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "init"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "popViewController"]
+- !private ["SQ", "present"]
+- !private ["SQ", "text"]
+- !private ["SQ", "tfDistolic"]
+- !private ["SQ", "tfSystolic"]
+- !private ["SQ", "tfWeight"]
+- !private ["SQ", "validateData"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "addMeasure"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SF", "init"]
+- !private ["SH", "Date"]
+- !private ["SH", "Double"]
+- !private ["SH", "Int"]
+- !private ["SH", "Measurement"]
+- !private ["SH", "UIAlertAction"]
+- !private ["SH", "UIAlertController"]
+- ["SH", ""]
+- !private ["SH", "addAction"]
+- !private ["SH", "addMeasure"]
+- !private ["SH", "alert"]
+- !private ["SH", "cancel"]
+- !private ["SH", "delegate"]
+- !private ["SH", "init"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "popViewController"]
+- !private ["SH", "present"]
+- !private ["SH", "text"]
+- !private ["SH", "tfDistolic"]
+- !private ["SH", "tfSystolic"]
+- !private ["SH", "tfWeight"]
+- !private ["SH", "validateData"]
+- !private ["SH", "viewDidLoad"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["15PresionArterial11MeasurementC", "init"]
+- ["15PresionArterial19MeasurementRegisterP", "Measurement"]
+- ["15PresionArterial19MeasurementRegisterP", "Void"]
+- ["15PresionArterial19MeasurementRegisterP", "addMeasure"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Date"]
+- !private ["So8NSCodingP", "Double"]
+- !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "Measurement"]
+- !private ["So8NSCodingP", "UIAlertAction"]
+- !private ["So8NSCodingP", "UIAlertController"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "addAction"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "popViewController"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "tfDistolic"]
+- !private ["So8NSCodingP", "tfSystolic"]
+- !private ["So8NSCodingP", "tfWeight"]
+- !private ["So8NSCodingP", "validateData"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "Date"]
+- !private ["So26NSExtensionRequestHandlingP", "Double"]
+- !private ["So26NSExtensionRequestHandlingP", "Int"]
+- !private ["So26NSExtensionRequestHandlingP", "Measurement"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
+- !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "addAction"]
+- !private ["So26NSExtensionRequestHandlingP", "delegate"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "popViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "tfDistolic"]
+- !private ["So26NSExtensionRequestHandlingP", "tfSystolic"]
+- !private ["So26NSExtensionRequestHandlingP", "tfWeight"]
+- !private ["So26NSExtensionRequestHandlingP", "validateData"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "Double"]
+- !private ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "Measurement"]
+- ["So8NSObjectC", "MeasurementRegister"]
+- !private ["So8NSObjectC", "UIAlertAction"]
+- !private ["So8NSObjectC", "UIAlertController"]
+- ["So8NSObjectC", "UITextField"]
+- ["So8NSObjectC", "UITextView"]
+- !private ["So8NSObjectC", "addAction"]
+- ["So8NSObjectC", "addMeasurement"]
+- ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "popViewController"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "tfDistolic"]
+- ["So8NSObjectC", "tfSystolic"]
+- ["So8NSObjectC", "tfWeight"]
+- ["So8NSObjectC", "tvNotes"]
+- ["So8NSObjectC", "validateData"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "Date"]
+- !private ["So8NSObjectP", "Double"]
+- !private ["So8NSObjectP", "Int"]
+- !private ["So8NSObjectP", "Measurement"]
+- !private ["So8NSObjectP", "UIAlertAction"]
+- !private ["So8NSObjectP", "UIAlertController"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addAction"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "popViewController"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "tfDistolic"]
+- !private ["So8NSObjectP", "tfSystolic"]
+- !private ["So8NSObjectP", "tfWeight"]
+- !private ["So8NSObjectP", "validateData"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sj", "init"]
+- !private ["Sq", "addMeasure"]
+- !private ["Sq", "text"]
+- !private ["SY", "alert"]
+- !private ["SY", "cancel"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["So22UIAlertControllerStyleV", "alert"]
+- !private ["So18UIAlertActionStyleV", "cancel"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So13UIAlertActionC", "init"]
+- !private ["So17UIAlertControllerC", "addAction"]
+- !private ["So17UIAlertControllerC", "init"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Date"]
+- !private ["So21UIAppearanceContainerP", "Double"]
+- !private ["So21UIAppearanceContainerP", "Int"]
+- !private ["So21UIAppearanceContainerP", "Measurement"]
+- !private ["So21UIAppearanceContainerP", "UIAlertAction"]
+- !private ["So21UIAppearanceContainerP", "UIAlertController"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "addAction"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "popViewController"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "tfDistolic"]
+- !private ["So21UIAppearanceContainerP", "tfSystolic"]
+- !private ["So21UIAppearanceContainerP", "tfWeight"]
+- !private ["So21UIAppearanceContainerP", "validateData"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "Date"]
+- !private ["So18UIContentContainerP", "Double"]
+- !private ["So18UIContentContainerP", "Int"]
+- !private ["So18UIContentContainerP", "Measurement"]
+- !private ["So18UIContentContainerP", "UIAlertAction"]
+- !private ["So18UIContentContainerP", "UIAlertController"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "addAction"]
+- !private ["So18UIContentContainerP", "delegate"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "popViewController"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "tfDistolic"]
+- !private ["So18UIContentContainerP", "tfSystolic"]
+- !private ["So18UIContentContainerP", "tfWeight"]
+- !private ["So18UIContentContainerP", "validateData"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Date"]
+- !private ["So18UIFocusEnvironmentP", "Double"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "Measurement"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
+- !private ["So18UIFocusEnvironmentP", "UIAlertController"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "addAction"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "popViewController"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "tfDistolic"]
+- !private ["So18UIFocusEnvironmentP", "tfSystolic"]
+- !private ["So18UIFocusEnvironmentP", "tfWeight"]
+- !private ["So18UIFocusEnvironmentP", "validateData"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So22UINavigationControllerC", "popViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "Date"]
+- !private ["So30UIPasteConfigurationSupportingP", "Double"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "Measurement"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "addAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "tfDistolic"]
+- !private ["So30UIPasteConfigurationSupportingP", "tfSystolic"]
+- !private ["So30UIPasteConfigurationSupportingP", "tfWeight"]
+- !private ["So30UIPasteConfigurationSupportingP", "validateData"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "Date"]
+- !private ["So11UIResponderC", "Double"]
+- !private ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "Measurement"]
+- ["So11UIResponderC", "MeasurementRegister"]
+- !private ["So11UIResponderC", "UIAlertAction"]
+- !private ["So11UIResponderC", "UIAlertController"]
+- ["So11UIResponderC", "UITextField"]
+- ["So11UIResponderC", "UITextView"]
+- !private ["So11UIResponderC", "addAction"]
+- ["So11UIResponderC", "addMeasurement"]
+- ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "popViewController"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "tfDistolic"]
+- ["So11UIResponderC", "tfSystolic"]
+- ["So11UIResponderC", "tfWeight"]
+- ["So11UIResponderC", "tvNotes"]
+- ["So11UIResponderC", "validateData"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Date"]
+- !private ["So30UIResponderStandardEditActionsP", "Double"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "Measurement"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
+- !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "addAction"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "popViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "tfDistolic"]
+- !private ["So30UIResponderStandardEditActionsP", "tfSystolic"]
+- !private ["So30UIResponderStandardEditActionsP", "tfWeight"]
+- !private ["So30UIResponderStandardEditActionsP", "validateData"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "init"]
+- !private ["So16UIStateRestoringP", "Date"]
+- !private ["So16UIStateRestoringP", "Double"]
+- !private ["So16UIStateRestoringP", "Int"]
+- !private ["So16UIStateRestoringP", "Measurement"]
+- !private ["So16UIStateRestoringP", "UIAlertAction"]
+- !private ["So16UIStateRestoringP", "UIAlertController"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "addAction"]
+- !private ["So16UIStateRestoringP", "delegate"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "popViewController"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "tfDistolic"]
+- !private ["So16UIStateRestoringP", "tfSystolic"]
+- !private ["So16UIStateRestoringP", "tfWeight"]
+- !private ["So16UIStateRestoringP", "validateData"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "Date"]
+- !private ["So18UITraitEnvironmentP", "Double"]
+- !private ["So18UITraitEnvironmentP", "Int"]
+- !private ["So18UITraitEnvironmentP", "Measurement"]
+- !private ["So18UITraitEnvironmentP", "UIAlertAction"]
+- !private ["So18UITraitEnvironmentP", "UIAlertController"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "addAction"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "popViewController"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "tfDistolic"]
+- !private ["So18UITraitEnvironmentP", "tfSystolic"]
+- !private ["So18UITraitEnvironmentP", "tfWeight"]
+- !private ["So18UITraitEnvironmentP", "validateData"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "Date"]
+- !private ["So23UIUserActivityRestoringP", "Double"]
+- !private ["So23UIUserActivityRestoringP", "Int"]
+- !private ["So23UIUserActivityRestoringP", "Measurement"]
+- !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
+- !private ["So23UIUserActivityRestoringP", "UIAlertController"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addAction"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "popViewController"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "tfDistolic"]
+- !private ["So23UIUserActivityRestoringP", "tfSystolic"]
+- !private ["So23UIUserActivityRestoringP", "tfWeight"]
+- !private ["So23UIUserActivityRestoringP", "validateData"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Bool"]
+- !private ["So16UIViewControllerC", "Date"]
+- !private ["So16UIViewControllerC", "Double"]
+- !private ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "Measurement"]
+- ["So16UIViewControllerC", "MeasurementRegister"]
+- !private ["So16UIViewControllerC", "UIAlertAction"]
+- !private ["So16UIViewControllerC", "UIAlertController"]
+- ["So16UIViewControllerC", "UITextField"]
+- ["So16UIViewControllerC", "UITextView"]
+- ["So16UIViewControllerC", ""]
+- !private ["So16UIViewControllerC", "addAction"]
+- ["So16UIViewControllerC", "addMeasurement"]
+- ["So16UIViewControllerC", "delegate"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "popViewController"]
+- !private ["So16UIViewControllerC", "present"]
+- ["So16UIViewControllerC", "tfDistolic"]
+- ["So16UIViewControllerC", "tfSystolic"]
+- ["So16UIViewControllerC", "tfWeight"]
+- ["So16UIViewControllerC", "tvNotes"]
+- ["So16UIViewControllerC", "validateData"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "Bool"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "Date"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "Double"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "Int"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "Measurement"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "MeasurementRegister"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "UIAlertAction"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "UIAlertController"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "UITextField"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "UITextView"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "addMeasurement"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "deinit"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "delegate"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "init"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "navigationController"]
+- !private ["15PresionArterial24ViewControllerAddMeasureC", "present"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "tfDistolic"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "tfSystolic"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "tfWeight"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "tvNotes"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "validateData"]
+- ["15PresionArterial24ViewControllerAddMeasureC", "viewDidLoad"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Measurement"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tfDistolic"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tfSystolic"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tfWeight"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "validateData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "addMeasure"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "Sz"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- !private "Se"
+- !private "Sd"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SF"
+- "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "15PresionArterial11MeasurementC"
+- "15PresionArterial19MeasurementRegisterP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sj"
+- !private "Sq"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s10SIMDScalarP"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "So22UIAlertControllerStyleV"
+- !private "So18UIAlertActionStyleV"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So13UIAlertActionC"
+- !private "So17UIAlertControllerC"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So10UIKeyInputP"
+- !private "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "15PresionArterial24ViewControllerAddMeasureC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "a3717d9f6977840f410412f5646d6018"

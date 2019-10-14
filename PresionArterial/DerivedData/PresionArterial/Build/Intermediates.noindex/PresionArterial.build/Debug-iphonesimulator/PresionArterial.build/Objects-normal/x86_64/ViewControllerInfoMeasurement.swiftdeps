@@ -1,0 +1,464 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewControllerInfoMeasurement"
+provides-nominal:
+- "15PresionArterial29ViewControllerInfoMeasurementC"
+provides-member:
+- ["15PresionArterial29ViewControllerInfoMeasurementC", ""]
+provides-dynamic-lookup:
+- "lblDistolic"
+- "lblNotes"
+- "lblSistolic"
+- "lblWeight"
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Measurement"
+- !private "String"
+- "UILabel"
+- "UIViewController"
+- "ViewControllerInfoMeasurement"
+depends-member:
+- !private ["SK", "init"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "diastolicP"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "lblDistolic"]
+- !private ["s7CVarArgP", "lblNotes"]
+- !private ["s7CVarArgP", "lblSistolic"]
+- !private ["s7CVarArgP", "lblWeight"]
+- !private ["s7CVarArgP", "measurement"]
+- !private ["s7CVarArgP", "notes"]
+- !private ["s7CVarArgP", "systolicP"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "weight"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "diastolicP"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "lblDistolic"]
+- !private ["s28CustomDebugStringConvertibleP", "lblNotes"]
+- !private ["s28CustomDebugStringConvertibleP", "lblSistolic"]
+- !private ["s28CustomDebugStringConvertibleP", "lblWeight"]
+- !private ["s28CustomDebugStringConvertibleP", "measurement"]
+- !private ["s28CustomDebugStringConvertibleP", "notes"]
+- !private ["s28CustomDebugStringConvertibleP", "systolicP"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "weight"]
+- !private ["s17CustomReflectableP", "diastolicP"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "notes"]
+- !private ["s17CustomReflectableP", "systolicP"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s17CustomReflectableP", "weight"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "diastolicP"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "lblDistolic"]
+- !private ["s23CustomStringConvertibleP", "lblNotes"]
+- !private ["s23CustomStringConvertibleP", "lblSistolic"]
+- !private ["s23CustomStringConvertibleP", "lblWeight"]
+- !private ["s23CustomStringConvertibleP", "measurement"]
+- !private ["s23CustomStringConvertibleP", "notes"]
+- !private ["s23CustomStringConvertibleP", "systolicP"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "weight"]
+- !private ["Se", "diastolicP"]
+- !private ["Se", "init"]
+- !private ["Se", "notes"]
+- !private ["Se", "systolicP"]
+- !private ["Se", "text"]
+- !private ["Se", "weight"]
+- !private ["SE", "diastolicP"]
+- !private ["SE", "init"]
+- !private ["SE", "notes"]
+- !private ["SE", "systolicP"]
+- !private ["SE", "text"]
+- !private ["SE", "weight"]
+- !private ["SQ", "String"]
+- ["SQ", ""]
+- !private ["SQ", "diastolicP"]
+- !private ["SQ", "init"]
+- !private ["SQ", "lblDistolic"]
+- !private ["SQ", "lblNotes"]
+- !private ["SQ", "lblSistolic"]
+- !private ["SQ", "lblWeight"]
+- !private ["SQ", "measurement"]
+- !private ["SQ", "notes"]
+- !private ["SQ", "systolicP"]
+- !private ["SQ", "text"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "weight"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "diastolicP"]
+- !private ["s23ExpressibleByNilLiteralP", "notes"]
+- !private ["s23ExpressibleByNilLiteralP", "systolicP"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s23ExpressibleByNilLiteralP", "weight"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "String"]
+- ["SH", ""]
+- !private ["SH", "diastolicP"]
+- !private ["SH", "init"]
+- !private ["SH", "lblDistolic"]
+- !private ["SH", "lblNotes"]
+- !private ["SH", "lblSistolic"]
+- !private ["SH", "lblWeight"]
+- !private ["SH", "measurement"]
+- !private ["SH", "notes"]
+- !private ["SH", "systolicP"]
+- !private ["SH", "text"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "weight"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["15PresionArterial11MeasurementC", "diastolicP"]
+- !private ["15PresionArterial11MeasurementC", "notes"]
+- !private ["15PresionArterial11MeasurementC", "systolicP"]
+- !private ["15PresionArterial11MeasurementC", "weight"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "String"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "lblDistolic"]
+- !private ["So8NSCodingP", "lblNotes"]
+- !private ["So8NSCodingP", "lblSistolic"]
+- !private ["So8NSCodingP", "lblWeight"]
+- !private ["So8NSCodingP", "measurement"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "String"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "lblDistolic"]
+- !private ["So26NSExtensionRequestHandlingP", "lblNotes"]
+- !private ["So26NSExtensionRequestHandlingP", "lblSistolic"]
+- !private ["So26NSExtensionRequestHandlingP", "lblWeight"]
+- !private ["So26NSExtensionRequestHandlingP", "measurement"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "Measurement"]
+- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UILabel"]
+- !private ["So8NSObjectC", "diastolicP"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "lblDistolic"]
+- ["So8NSObjectC", "lblNotes"]
+- ["So8NSObjectC", "lblSistolic"]
+- ["So8NSObjectC", "lblWeight"]
+- ["So8NSObjectC", "measurement"]
+- !private ["So8NSObjectC", "notes"]
+- !private ["So8NSObjectC", "systolicP"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectC", "weight"]
+- !private ["So8NSObjectP", "String"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "diastolicP"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "lblDistolic"]
+- !private ["So8NSObjectP", "lblNotes"]
+- !private ["So8NSObjectP", "lblSistolic"]
+- !private ["So8NSObjectP", "lblWeight"]
+- !private ["So8NSObjectP", "measurement"]
+- !private ["So8NSObjectP", "notes"]
+- !private ["So8NSObjectP", "systolicP"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "weight"]
+- !private ["Sq", "diastolicP"]
+- !private ["Sq", "notes"]
+- !private ["Sq", "systolicP"]
+- !private ["Sq", "text"]
+- !private ["Sq", "weight"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "String"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "lblDistolic"]
+- !private ["So21UIAppearanceContainerP", "lblNotes"]
+- !private ["So21UIAppearanceContainerP", "lblSistolic"]
+- !private ["So21UIAppearanceContainerP", "lblWeight"]
+- !private ["So21UIAppearanceContainerP", "measurement"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "String"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "lblDistolic"]
+- !private ["So18UIContentContainerP", "lblNotes"]
+- !private ["So18UIContentContainerP", "lblSistolic"]
+- !private ["So18UIContentContainerP", "lblWeight"]
+- !private ["So18UIContentContainerP", "measurement"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "String"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "lblDistolic"]
+- !private ["So18UIFocusEnvironmentP", "lblNotes"]
+- !private ["So18UIFocusEnvironmentP", "lblSistolic"]
+- !private ["So18UIFocusEnvironmentP", "lblWeight"]
+- !private ["So18UIFocusEnvironmentP", "measurement"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblDistolic"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblNotes"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblSistolic"]
+- !private ["So30UIPasteConfigurationSupportingP", "lblWeight"]
+- !private ["So30UIPasteConfigurationSupportingP", "measurement"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "Measurement"]
+- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "lblDistolic"]
+- ["So11UIResponderC", "lblNotes"]
+- ["So11UIResponderC", "lblSistolic"]
+- ["So11UIResponderC", "lblWeight"]
+- ["So11UIResponderC", "measurement"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "lblDistolic"]
+- !private ["So30UIResponderStandardEditActionsP", "lblNotes"]
+- !private ["So30UIResponderStandardEditActionsP", "lblSistolic"]
+- !private ["So30UIResponderStandardEditActionsP", "lblWeight"]
+- !private ["So30UIResponderStandardEditActionsP", "measurement"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "String"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "lblDistolic"]
+- !private ["So16UIStateRestoringP", "lblNotes"]
+- !private ["So16UIStateRestoringP", "lblSistolic"]
+- !private ["So16UIStateRestoringP", "lblWeight"]
+- !private ["So16UIStateRestoringP", "measurement"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "String"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "lblDistolic"]
+- !private ["So18UITraitEnvironmentP", "lblNotes"]
+- !private ["So18UITraitEnvironmentP", "lblSistolic"]
+- !private ["So18UITraitEnvironmentP", "lblWeight"]
+- !private ["So18UITraitEnvironmentP", "measurement"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "String"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "lblDistolic"]
+- !private ["So23UIUserActivityRestoringP", "lblNotes"]
+- !private ["So23UIUserActivityRestoringP", "lblSistolic"]
+- !private ["So23UIUserActivityRestoringP", "lblWeight"]
+- !private ["So23UIUserActivityRestoringP", "measurement"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Measurement"]
+- !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "lblDistolic"]
+- ["So16UIViewControllerC", "lblNotes"]
+- ["So16UIViewControllerC", "lblSistolic"]
+- ["So16UIViewControllerC", "lblWeight"]
+- ["So16UIViewControllerC", "measurement"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "Measurement"]
+- !private ["15PresionArterial29ViewControllerInfoMeasurementC", "String"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "UILabel"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "deinit"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "init"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "lblDistolic"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "lblNotes"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "lblSistolic"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "lblWeight"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "measurement"]
+- ["15PresionArterial29ViewControllerInfoMeasurementC", "viewDidLoad"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "diastolicP"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblDistolic"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblNotes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblSistolic"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lblWeight"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "measurement"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "notes"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systolicP"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "weight"]
+- !private ["s21_ObjectiveCBridgeableP", "diastolicP"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "notes"]
+- !private ["s21_ObjectiveCBridgeableP", "systolicP"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "weight"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+depends-nominal:
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "15PresionArterial11MeasurementC"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- !private "Sm"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- "15PresionArterial29ViewControllerInfoMeasurementC"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIROAuthCredential.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRFederatedAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRGameCenterAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/rubengarza/Documents/iOS TEC DEV/Proyecto Final/ArtPressure/PresionArterial/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "6a7c2cb2fd2c4ba56860146f13a7bdb6"
