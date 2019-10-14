@@ -19,7 +19,10 @@ they may have. We mainly take into account any kind of hearth disease and diabet
 
 | Name                           | Email                    | Role                                       |
 | ------------------------------ | ------------------------ | ------------------------------------------ |
-| Rubén Humberto Garza Hernández | rubengarzah@hotmail.com  | Proyect configuration admin & proyect Admin|
+| Rubén Humberto Garza Hernández | rubengarzah@hotmail.com  | Developer                                  |
+| Jesús Alfredo Mejía Gil        | jesmga24@gmail.com       | Developer                                  |
+| Rubén Humberto Garza Hernández | rubengarzah@hotmail.com  | Developer                                  |
+
 
 ### Management tools
 
