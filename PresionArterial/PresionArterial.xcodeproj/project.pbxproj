@@ -20,6 +20,7 @@
 		E86DA1C523526B610017FC53 /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C423526B610017FC53 /* ViewControllerInfo.swift */; };
 		E86DA1C7235274430017FC53 /* ViewControllerAddMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C6235274430017FC53 /* ViewControllerAddMeasure.swift */; };
 		E86DA1C92352795F0017FC53 /* ViewControllerInfoMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA1C82352795F0017FC53 /* ViewControllerInfoMeasurement.swift */; };
+		E8BA2F252371346600887241 /* Measurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BA2F242371346600887241 /* Measurements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E86DA1C423526B610017FC53 /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
 		E86DA1C6235274430017FC53 /* ViewControllerAddMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAddMeasure.swift; sourceTree = "<group>"; };
 		E86DA1C82352795F0017FC53 /* ViewControllerInfoMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfoMeasurement.swift; sourceTree = "<group>"; };
+		E8BA2F242371346600887241 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				E86DA185235162A50017FC53 /* AppDelegate.swift */,
 				E86DA189235162A50017FC53 /* Main.storyboard */,
+				E8BA2F242371346600887241 /* Measurements.swift */,
 				E86DA1C82352795F0017FC53 /* ViewControllerInfoMeasurement.swift */,
 				E86DA1C6235274430017FC53 /* ViewControllerAddMeasure.swift */,
 				E86DA1C423526B610017FC53 /* ViewControllerInfo.swift */,
@@ -165,6 +168,7 @@
 				E86DA18E235162A50017FC53 /* PresionArterial.xcdatamodeld in Sources */,
 				E86DA19B235175BC0017FC53 /* ViewControllerRegistro.swift in Sources */,
 				E86DA1C92352795F0017FC53 /* ViewControllerInfoMeasurement.swift in Sources */,
+				E8BA2F252371346600887241 /* Measurements.swift in Sources */,
 				E86DA19F235176CA0017FC53 /* Usuario.swift in Sources */,
 				E86DA186235162A50017FC53 /* AppDelegate.swift in Sources */,
 				E86DA1C523526B610017FC53 /* ViewControllerInfo.swift in Sources */,

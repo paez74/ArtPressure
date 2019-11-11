@@ -22,4 +22,11 @@ class Measurement: NSObject {
         self.date = date
         self.notes = ""
     }
+    init(weight:Double,systolicP:Int,diastolicP:Int,date:Date,notes:String){
+        self.weight = weight
+        self.systolicP = systolicP
+        self.diastolicP = diastolicP
+        self.date = date
+        self.notes = notes
+    }
 }

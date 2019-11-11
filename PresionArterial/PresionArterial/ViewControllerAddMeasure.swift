@@ -8,28 +8,59 @@
 
 import UIKit
 protocol MeasurementRegister{
-   func addMeasure(measure:Measurement) -> Void
+    func addMeasure(measure:[Measurement]) -> Void
 }
 class ViewControllerAddMeasure: UIViewController {
     @IBOutlet var tfSystolic: UITextField!
     @IBOutlet var tfDistolic: UITextField!
     @IBOutlet var tfWeight: UITextField!
     @IBOutlet var tvNotes: UITextView!
-    
+    @IBOutlet var lblTimer: UILabel!
+    @IBOutlet var createButton: UIButton!
+    var counter = 0
+    var pressionTaken = 3
+    var timer = Timer()
+    var measurements = [Measurement]()
     var delegate:MeasurementRegister!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lblTimer.text = "Solo  " + "\(pressionTaken) mas";
         // Do any additional setup after loading the view.
     }
     
 
     @IBAction func addMeasurement(_ sender: Any) {
         if validateData(){
-            let measurement = Measurement(weight: Double(tfWeight.text!)!, systolicP: Int(tfSystolic.text!)!, diastolicP: Int(tfDistolic.text!)!, date: Date())
-            delegate.addMeasure(measure: measurement)
+        timer.invalidate() // just in case this button is tapped multiple times
+            let measurement = Measurement(weight: Double(tfWeight.text!)!, systolicP: Int(tfSystolic.text!)!, diastolicP: Int(tfDistolic.text!)!, date: Date(),notes:tvNotes.text!)
+        measurements.append(measurement);
+        
+        tfSystolic.text = ""
+        tfDistolic.text = ""
+        tfWeight.text   = ""
+        tvNotes.text = ""
+        
+        // start the timer
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+            pressionTaken -= 1;
+            createButton.isEnabled = false;
+        if pressionTaken == 0 {
+            delegate.addMeasure(measure: measurements)
             navigationController?.popViewController(animated: true)
+        }
+        }
+    }
+    
+    // called every time interval from the timer
+    @objc func timerAction() {
+        counter += 1
+        lblTimer.text = "\(counter)"
+        if counter == 10 {
+            counter = 0;
+            lblTimer.text = "Solo" + "\(pressionTaken) mas";
+            timer.invalidate()
+            createButton.isEnabled = true;
         }
     }
     
