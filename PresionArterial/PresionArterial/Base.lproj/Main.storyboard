@@ -360,6 +360,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="atG-mI-PHV">
+                                <rect key="frame" x="83" y="652" width="249" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <segments>
+                                    <segment title="Primero"/>
+                                    <segment title="Second"/>
+                                    <segment title="Tercero"/>
+                                </segments>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="scClicked:" destination="0o2-bg-gvQ" eventType="valueChanged" id="8uY-pa-ta8"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mediciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3Q-Of-Hcw">
+                                <rect key="frame" x="165" y="585" width="109" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.27833035588264465" green="0.65497910976409912" blue="0.95335835218429565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="i4p-Au-dW0"/>
@@ -369,6 +390,7 @@
                         <outlet property="lblNotes" destination="Xen-sY-9hW" id="WaS-ag-DnE"/>
                         <outlet property="lblSistolic" destination="aWZ-Dg-iKO" id="JVK-Cs-ghh"/>
                         <outlet property="lblWeight" destination="lPN-Cb-5Vd" id="JMp-Tu-4eP"/>
+                        <outlet property="scMeasure" destination="atG-mI-PHV" id="hfV-vW-mn5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqp-g9-YiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -455,11 +477,27 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Subir Imagen"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siguiente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ0-bq-1BG">
+                                <rect key="frame" x="218" y="491" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydb-4C-7T2">
+                                <rect key="frame" x="205" y="520" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.27833035588264465" green="0.65497910976409912" blue="0.95335835218429565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kFC-ki-163"/>
                     </view>
                     <connections>
+                        <outlet property="createButton" destination="FYU-VI-ftW" id="oan-Ja-JbQ"/>
+                        <outlet property="lblTimer" destination="ydb-4C-7T2" id="5Pn-yH-NBf"/>
                         <outlet property="tfDistolic" destination="ZGs-oo-jqI" id="w7C-nR-ETP"/>
                         <outlet property="tfSystolic" destination="Imx-Dp-E10" id="weZ-EP-3pK"/>
                         <outlet property="tfWeight" destination="eVv-2t-GYw" id="g0g-T7-sTZ"/>
@@ -468,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYF-LV-c7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3816" y="85"/>
+            <point key="canvasLocation" x="3815.9420289855075" y="84.375"/>
         </scene>
         <!--Mediciones-->
         <scene sceneID="zjN-eH-hop">
