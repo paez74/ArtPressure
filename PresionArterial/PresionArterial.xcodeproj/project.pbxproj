@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4FEA48A2BD294772D80F87E /* libPods-PresionArterial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47FCABCC12C622E86739946 /* libPods-PresionArterial.a */; };
+		D886BB942354127900C0D82B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D886BB932354127900C0D82B /* GoogleService-Info.plist */; };
 		E86DA186235162A50017FC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86DA185235162A50017FC53 /* AppDelegate.swift */; };
 		E86DA18B235162A50017FC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86DA189235162A50017FC53 /* Main.storyboard */; };
 		E86DA18E235162A50017FC53 /* PresionArterial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E86DA18C235162A50017FC53 /* PresionArterial.xcdatamodeld */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA3EE36EB99F86B7A940DE60 /* Pods-PresionArterial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresionArterial.debug.xcconfig"; path = "Target Support Files/Pods-PresionArterial/Pods-PresionArterial.debug.xcconfig"; sourceTree = "<group>"; };
+		D886BB932354127900C0D82B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "PresionArterial/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF268C90B84C5491222FB40B /* Pods-PresionArterial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresionArterial.release.xcconfig"; path = "Target Support Files/Pods-PresionArterial/Pods-PresionArterial.release.xcconfig"; sourceTree = "<group>"; };
 		E86DA182235162A50017FC53 /* PresionArterial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresionArterial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86DA185235162A50017FC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E86DA18A235162A50017FC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 		E86DA1C423526B610017FC53 /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
 		E86DA1C6235274430017FC53 /* ViewControllerAddMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAddMeasure.swift; sourceTree = "<group>"; };
 		E86DA1C82352795F0017FC53 /* ViewControllerInfoMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfoMeasurement.swift; sourceTree = "<group>"; };
+		F47FCABCC12C622E86739946 /* libPods-PresionArterial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PresionArterial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BA2F242371346600887241 /* Measurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measurements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FEA48A2BD294772D80F87E /* libPods-PresionArterial.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		702C39A39613A1FC7741BA3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F47FCABCC12C622E86739946 /* libPods-PresionArterial.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E86DA179235162A50017FC53 = {
 			isa = PBXGroup;
 			children = (
+				D886BB932354127900C0D82B /* GoogleService-Info.plist */,
 				E86DA184235162A50017FC53 /* PresionArterial */,
 				E86DA183235162A50017FC53 /* Products */,
+				F77485FD6B79EB1D482DA010 /* Pods */,
+				702C39A39613A1FC7741BA3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +109,15 @@
 			path = PresionArterial;
 			sourceTree = "<group>";
 		};
+		F77485FD6B79EB1D482DA010 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA3EE36EB99F86B7A940DE60 /* Pods-PresionArterial.debug.xcconfig */,
+				DF268C90B84C5491222FB40B /* Pods-PresionArterial.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E86DA197235162AB0017FC53 /* Build configuration list for PBXNativeTarget "PresionArterial" */;
 			buildPhases = (
+				52E257FD847E37DAB7BBA637 /* [CP] Check Pods Manifest.lock */,
 				E86DA17E235162A50017FC53 /* Sources */,
 				E86DA17F235162A50017FC53 /* Frameworks */,
 				E86DA180235162A50017FC53 /* Resources */,
@@ -150,12 +178,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86DA193235162AB0017FC53 /* LaunchScreen.storyboard in Resources */,
+				D886BB942354127900C0D82B /* GoogleService-Info.plist in Resources */,
 				E86DA190235162AB0017FC53 /* Assets.xcassets in Resources */,
 				E86DA18B235162A50017FC53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52E257FD847E37DAB7BBA637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PresionArterial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E86DA17E235162A50017FC53 /* Sources */ = {
@@ -316,6 +370,7 @@
 		};
 		E86DA198235162AB0017FC53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3EE36EB99F86B7A940DE60 /* Pods-PresionArterial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -333,6 +388,7 @@
 		};
 		E86DA199235162AB0017FC53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF268C90B84C5491222FB40B /* Pods-PresionArterial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
