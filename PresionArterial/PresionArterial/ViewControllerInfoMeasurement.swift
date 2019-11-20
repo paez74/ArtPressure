@@ -10,6 +10,8 @@ import UIKit
 
 class ViewControllerInfoMeasurement: UIViewController {
     var measurement = [Measurement]()
+    var weight:Double!;
+    var notes:String!;
     @IBOutlet var lblSistolic: UILabel!
     @IBOutlet var lblWeight: UILabel!
     @IBOutlet var lblNotes: UILabel!
@@ -20,17 +22,17 @@ class ViewControllerInfoMeasurement: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        lblSistolic.text = String(measurement[0].systolicP)
-        lblDistolic.text = String(measurement[0].diastolicP)
-        lblWeight.text = String(measurement[0].weight)
-        lblNotes.text = String(measurement[0].notes)
+        lblSistolic.text = String(measurement[0].systolic)
+        lblDistolic.text = String(measurement[0].diastolic)
+        lblWeight.text = String(weight);
+        lblNotes.text = notes;
     }
     
     @IBAction func scClicked(_ sender: Any) {
-        lblSistolic.text = String(measurement[scMeasure.selectedSegmentIndex].systolicP)
-        lblDistolic.text = String(measurement[scMeasure.selectedSegmentIndex].diastolicP)
-        lblWeight.text = String(measurement[scMeasure.selectedSegmentIndex].weight)
-    lblNotes.text = String(measurement[scMeasure.selectedSegmentIndex].notes)
+        lblSistolic.text = String(measurement[scMeasure.selectedSegmentIndex].systolic)
+        lblDistolic.text = String(measurement[scMeasure.selectedSegmentIndex].diastolic)
+        lblWeight.text = String(self.weight)
+        lblNotes.text = String(self.notes);
     }
     
 

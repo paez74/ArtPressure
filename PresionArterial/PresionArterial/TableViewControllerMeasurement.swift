@@ -22,32 +22,6 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
         
         self.title = "Mediciones Pasadas"
         formatter.dateFormat = "yyyy/MM/dd HH:mm"
-       /*  var measureArray = [Measurement]()
-       var dummyMeasure = Measurement(weight: 75, systolicP: 35, diastolicP: 100, date: formatter.date(from: "2019/10/08 22:31")!)
-        measureArray.append(dummyMeasure)
-        dummyMeasure = Measurement(weight: 76, systolicP: 40, diastolicP: 100, date: formatter.date(from: "2019/10/08 22:31")!)
-        measureArray.append(dummyMeasure)
-        dummyMeasure = Measurement(weight: 80, systolicP: 25, diastolicP: 100, date: formatter.date(from: "2019/10/08 22:31")!)
-        measureArray.append(dummyMeasure)
-        var measuresTest = Measurements(measures:measureArray,date:dummyMeasure.date)
-        measurementList.append(measuresTest)
-        dummyMeasure = Measurement(weight: 73.5, systolicP: 46, diastolicP: 120, date: formatter.date(from: "2019/10/07 22:31")!)
-        measureArray[0] = dummyMeasure;
-        dummyMeasure = Measurement(weight: 78, systolicP:  35, diastolicP: 120, date: formatter.date(from: "2019/10/07 22:31")!)
-        measureArray[1] = dummyMeasure;
-        dummyMeasure = Measurement(weight: 79, systolicP: 56, diastolicP: 120, date: formatter.date(from: "2019/10/07 22:31")!)
-        measureArray[2] = dummyMeasure;
-        measuresTest = Measurements(measures:measureArray,date:dummyMeasure.date)
-        measurementList.append(measuresTest)
-        dummyMeasure = Measurement(weight: 72.8, systolicP: 50, diastolicP: 100, date: formatter.date(from: "2019/10/06 22:31")!)
-        measureArray[0] = dummyMeasure;
-        dummyMeasure = Measurement(weight: 102, systolicP: 40, diastolicP: 100, date: formatter.date(from: "2019/10/06 22:31")!)
-        measureArray[1] = dummyMeasure;
-        dummyMeasure = Measurement(weight: 72.8, systolicP: 33, diastolicP: 100, date: formatter.date(from: "2019/10/06 22:31")!)
-        measureArray[2] = dummyMeasure;
-        measuresTest = Measurements(measures:measureArray,date:dummyMeasure.date)
-        measurementList.append(measuresTest)
-        formatter.dateFormat = "dd-MM-yy" */
         // [START setup]
         let settings = FirestoreSettings()
         
@@ -68,22 +42,34 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
                 } else {
                     for document in querySnapshot!.documents {
                         let docInfo = document.data();
-                        let weight = docInfo["weight"];
-                        let notes = docInfo["notas"];
-                        print(docInfo);
+                        let measure = docInfo["measurements"] as! [String: AnyObject];
+                        var measured = measure["measure1"] as! [String: AnyObject];
+                        var measureArray = [Measurement]()
+                        measureArray.append(Measurement(systolic: measured["systolic"] as! Int, diastolic:measured["diastolic"] as! Int));
+                        measured = measure["measure2"] as! [String : AnyObject];
+                        measureArray.append(Measurement(systolic: measured["systolic"] as! Int, diastolic:measured["diastolic"] as! Int));
+                        measured = measure["measure3"] as! [String: AnyObject];
+                        measureArray.append(Measurement(systolic: measured["systolic"] as! Int, diastolic:measured["diastolic"] as! Int));
+                       let date = docInfo["createdAt"] as! Timestamp;
+                       let measurements =  Measurements(measures:measureArray,
+                                                        date:date.dateValue(),
+                                                        weight:docInfo["weight"] as! Double,
+                                                        notes:docInfo["notes"] as! String)
+                        self.measurementList.append(measurements)
+                        self.tableView.reloadData()
                     }
                 }
             }
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // to do manipulate user
         super.viewWillAppear(animated)
-        // [START auth_listener]
+
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             
             self.tableView.reloadData()
-            let user = Auth.auth().currentUser
-            // END_EXCLUDE]
+            //let user = Auth.auth().currentUser
         }
     }
         // [END auth_
@@ -100,21 +86,56 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "measureCell", for: indexPath)
-        cell.textLabel?.text = String(measurementList[indexPath.row].measures[0].systolicP) + "/" + String(measurementList[indexPath.row].measures[0].diastolicP)
-        cell.detailTextLabel?.text = formatter.string(from:measurementList[indexPath.row].measures[0].date)
+        cell.textLabel?.text = String(measurementList[indexPath.row].measures[0].systolic) + "/" + String(measurementList[indexPath.row].measures[0].diastolic)
+        cell.detailTextLabel?.text = formatter.string(from:measurementList[indexPath.row].date)
         return cell
     }
     
 
-    func addMeasure(measure: [Measurement]) {
+    func addMeasure(measure: [Measurement],weight:Double,notes:String) {
         // To do add to database
-        let newMeasures = Measurements(measures:measure,date:measure[0].date)
+        let newMeasures = Measurements(measures:measure,date:Date(),weight:weight,notes:notes)
         measurementList.append(newMeasures)
         tableView.reloadData()
+        self.uploadMeasure(measures:newMeasures);
     }
 
 
-
+    func uploadMeasure(measures:Measurements){
+        
+        formatter.dateFormat = "MMMM d, yyyy HH:mm:ss"
+        let createdAtTime: Date = formatter.date(from: formatter.string(from:measures.date)) ?? Date(timeIntervalSince1970: 0)
+        let createdAt: Timestamp = Timestamp(date: createdAtTime)
+        self.formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        let db = Firestore.firestore();
+        db.collection("users").document("rubengarzah@hotmail.com")
+            .collection("bloodPressure").addDocument(data:[
+            "createdAt": createdAt,
+            "measurements": [
+                "measure1": [
+                    "diastolic": measures.measures[0].diastolic,
+                    "systolic": measures.measures[0].systolic
+                ],
+                "measure2":[
+                    "diastolic": measures.measures[1].diastolic,
+                    "systolic": measures.measures[1].systolic
+                ],
+                "measure3":[
+                    "diastolic": measures.measures[2].diastolic,
+                    "systolic":  measures.measures[2].systolic
+                ]
+                
+                ],
+                 "notes": measures.notes!,
+                 "weight": measures.weight,
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+    }
 
     override func viewWillDisappear(_ animated: Bool) {
         Auth.auth().removeStateDidChangeListener(handle!)
@@ -130,6 +151,8 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
             let indice = tableView.indexPathForSelectedRow!
             let vistaSig = segue.destination as!  ViewControllerInfoMeasurement
             vistaSig.measurement = measurementList[indice.row].measures
+            vistaSig.weight = measurementList[indice.row].weight;
+            vistaSig.notes = measurementList[indice.row].notes;
         }
     }
  
