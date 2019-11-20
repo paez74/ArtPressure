@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseCore
+import FirebaseFirestore
 
 class TableViewControllerMeasurement: UITableViewController,MeasurementRegister {
     
     var measurementList = [Measurements]()
     var formatter = DateFormatter()
-    
+    var handle: AuthStateDidChangeListenerHandle?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "Mediciones Pasadas"
         formatter.dateFormat = "yyyy/MM/dd HH:mm"
-        var measureArray = [Measurement]()
-        var dummyMeasure = Measurement(weight: 75, systolicP: 35, diastolicP: 100, date: formatter.date(from: "2019/10/08 22:31")!)
+       /*  var measureArray = [Measurement]()
+       var dummyMeasure = Measurement(weight: 75, systolicP: 35, diastolicP: 100, date: formatter.date(from: "2019/10/08 22:31")!)
         measureArray.append(dummyMeasure)
         dummyMeasure = Measurement(weight: 76, systolicP: 40, diastolicP: 100, date: formatter.date(from: "2019/10/08 22:31")!)
         measureArray.append(dummyMeasure)
@@ -42,9 +47,46 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
         measureArray[2] = dummyMeasure;
         measuresTest = Measurements(measures:measureArray,date:dummyMeasure.date)
         measurementList.append(measuresTest)
-        formatter.dateFormat = "dd-MM-yy"
+        formatter.dateFormat = "dd-MM-yy" */
+        // [START setup]
+        let settings = FirestoreSettings()
+        
+        Firestore.firestore().settings = settings
+        // [END setup]
+       
+        getBloodPressure()
     }
-
+    
+    
+    func getBloodPressure(){
+        let db = Firestore.firestore();
+            // [START get_multiple_all]
+        db.collection("users").document("rubengarzah@hotmail.com")
+            .collection("bloodPressure").getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        let docInfo = document.data();
+                        let weight = docInfo["weight"];
+                        let notes = docInfo["notas"];
+                        print(docInfo);
+                    }
+                }
+            }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // [START auth_listener]
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+            self.tableView.reloadData()
+            let user = Auth.auth().currentUser
+            // END_EXCLUDE]
+        }
+    }
+        // [END auth_
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -74,7 +116,9 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
 
 
 
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
+    }
     // MARK: - Navigation
 
 
