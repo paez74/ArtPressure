@@ -8,6 +8,11 @@
 
 import UIKit
 
-class Autentificacion: NSObject {
+class Autentificacion: Codable {
 
+    var correo: String
+    var contrasena: String
+    init(correo : String, contrasena: String) {
+        self.correo = correo
+        self.contrasena = contrasena }
 }

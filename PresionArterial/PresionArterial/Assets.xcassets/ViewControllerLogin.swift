@@ -14,11 +14,44 @@ class ViewControllerLogin: UIViewController ,UserRegister{
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPass: UITextField!
     var loggedIn : Bool = false
+    //var personaAuth:Autentificacion
+    var personaAuth = Autentificacion(correo: "a", contrasena: "a")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       obtenerAutentificacion()
+        
     }
+    
+    func dataFilePath() -> URL {
+        let url = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+        let pathArchivo = url.appendingPathComponent("Autentificacion.plist")
+        return pathArchivo
+    }
+    
+    func guardarAutentificacion(){
+        do{
+            let data = try PropertyListEncoder().encode(personaAuth)
+            try data.write(to: dataFilePath())
+        }
+        catch{
+            print("Save failed")
+        }
+    }
+    
+    func obtenerAutentificacion(){
+        do{
+            let data = try Data.init(contentsOf: dataFilePath())
+            personaAuth = try PropertyListDecoder().decode(Autentificacion.self, from: data)
+            login(email: personaAuth.correo, password: personaAuth.contrasena)
+        }
+        catch{
+            print("Error reading or decoding file")
+        }
+    }
+    
     @IBAction func unwindRegistro(unwindSegue: UIStoryboardSegue){
         
     }
@@ -35,9 +68,9 @@ class ViewControllerLogin: UIViewController ,UserRegister{
         print(user.email!)
     }
     
-    func login() {
-        let email = tfEmail.text!
-        let password = tfPass.text!
+    func login(email:String, password:String) {
+        //let email = tfEmail.text!
+        //let password = tfPass.text!
         
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard let strongSelf = self else { return }
@@ -52,7 +85,12 @@ class ViewControllerLogin: UIViewController ,UserRegister{
                     strongSelf.loggedIn = false
                     return
                 } else {
+                    //strongSelf.personaAuth.correo = withEmail
+                    //strongSelf.personaAuth.contrasena = password
+                    //strongSelf.guardarAutentificacion()
+                    
                     strongSelf.loggedIn = true
+                    
             }
             // [END_EXCLUDE]
         }
@@ -60,7 +98,14 @@ class ViewControllerLogin: UIViewController ,UserRegister{
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "login" {
-            login()
+            login(email:tfEmail.text!, password: tfPass.text!)
+            if loggedIn{
+                personaAuth.correo = tfEmail.text!
+                personaAuth.contrasena = tfPass.text!
+                //guardarAutentificacion()
+                print(tfEmail.text!)
+                print(tfPass.text!)
+            }
             return loggedIn
         }else{
             return loggedIn
