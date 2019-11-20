@@ -8,7 +8,7 @@
 
 import UIKit
 protocol MeasurementRegister{
-    func addMeasure(measure:[Measurement]) -> Void
+    func addMeasure(measure:[Measurement],weight:Double,notes:String) -> Void
 }
 class ViewControllerAddMeasure: UIViewController {
     @IBOutlet var tfSystolic: UITextField!
@@ -33,20 +33,19 @@ class ViewControllerAddMeasure: UIViewController {
     @IBAction func addMeasurement(_ sender: Any) {
         if validateData(){
         timer.invalidate() // just in case this button is tapped multiple times
-            let measurement = Measurement(weight: Double(tfWeight.text!)!, systolicP: Int(tfSystolic.text!)!, diastolicP: Int(tfDistolic.text!)!, date: Date(),notes:tvNotes.text!)
+            let measurement = Measurement( systolic: Int(tfSystolic.text!)!, diastolic: Int(tfDistolic.text!)!)
         measurements.append(measurement);
         
         tfSystolic.text = ""
         tfDistolic.text = ""
-        tfWeight.text   = ""
-        tvNotes.text = ""
         
         // start the timer
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
             pressionTaken -= 1;
             createButton.isEnabled = false;
+            tfWeight.isEnabled = false;
         if pressionTaken == 0 {
-            delegate.addMeasure(measure: measurements)
+            delegate.addMeasure(measure: measurements,weight:Double(tfWeight.text!) as! Double,notes:tvNotes.text!)
             navigationController?.popViewController(animated: true)
         }
         }

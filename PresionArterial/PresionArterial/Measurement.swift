@@ -9,24 +9,14 @@
 import UIKit
 
 class Measurement: NSObject {
-    var weight:Double!
-    var systolicP:Int!
-    var diastolicP:Int!
-    var date:Date!
-    var notes:String!
     
-    init(weight:Double,systolicP:Int,diastolicP:Int,date:Date){
-        self.weight = weight
-        self.systolicP = systolicP
-        self.diastolicP = diastolicP
-        self.date = date
-        self.notes = ""
+    var systolic:Int!
+    var diastolic:Int!
+    
+    init(systolic:Int,diastolic:Int){
+        self.systolic = systolic
+        self.diastolic = diastolic
     }
-    init(weight:Double,systolicP:Int,diastolicP:Int,date:Date,notes:String){
-        self.weight = weight
-        self.systolicP = systolicP
-        self.diastolicP = diastolicP
-        self.date = date
-        self.notes = notes
-    }
+    
 }
+
