@@ -63,7 +63,7 @@ class ViewControllerLogin: UIViewController ,UserRegister{
             login()
             return loggedIn
         }else{
-            return loggedIn
+            return true
         }
     }
     
