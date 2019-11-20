@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 protocol UserRegister{
     func addUser(user:Usuario)-> Void
 }
@@ -19,6 +20,13 @@ class ViewControllerRegistro: UIViewController {
     @IBOutlet var tfPasswordRepeat: UITextField!
     @IBOutlet var btnRegistrarse: UIButton!
     @IBOutlet var dpBirthday: UIDatePicker!
+    
+    var name : String!
+    var lastname : String!
+    var email : String!
+    var password : String!
+    var birthday : Date!
+    var userCreated : Bool = false
     var delegate:UserRegister!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,31 +34,44 @@ class ViewControllerRegistro: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    func createUser(){
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            // [START_EXCLUDE]
+            guard let user = authResult?.user, error == nil else {
+                self.userCreated = false
+                let alerta = UIAlertController(title:"Error",message: error!.localizedDescription ,preferredStyle: .alert)
+                alerta.addAction(UIAlertAction(title:"OK",style: .cancel, handler:nil))
+                self.present(alerta,animated:true,completion:nil)
+                return
+            }
+            print("\(user.email!) created")
+           self.userCreated = true
+           self.navigationController?.popViewController(animated: true)
+            // [END_EXCLUDE]
+        }
+    }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if (sender as! UIButton) == btnRegistrarse{
             if validateData(){
                 addUser()
-                return true
+                return userCreated
             }
             else { return false}
         }
         else {return true}
     }
+    
     func addUser(){
-        let name = tfName.text!
-        let email = tfEmail.text!
-        let username = tfUsername.text!
-        let password = tfPassword.text!
-        let birthday = dpBirthday.date
-        let user = Usuario(name:name,email:email,username:username,bday:birthday)
-        delegate.addUser(user:user);
+        name = tfName.text!
+        email = tfEmail.text!
+        password = tfPassword.text!
+        birthday = dpBirthday.date
+        createUser()
     }
     func validateData() -> Bool{
       if tfName.text! == "" ||
          tfEmail.text! == "" ||
-         tfUsername.text! == "" ||
          tfPassword.text! == "" ||
          tfPasswordRepeat.text! == ""
         {
@@ -65,7 +86,6 @@ class ViewControllerRegistro: UIViewController {
         present(alerta,animated:true,completion:nil)
         return false
         }
-        
         return true
     }
     /*

@@ -108,7 +108,7 @@ class ViewControllerLogin: UIViewController ,UserRegister{
             }
             return loggedIn
         }else{
-            return loggedIn
+            return true
         }
     }
     
