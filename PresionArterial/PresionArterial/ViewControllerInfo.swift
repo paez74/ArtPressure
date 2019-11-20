@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewControllerInfo: UIViewController {
     @IBOutlet var lblName: UILabel!
@@ -17,6 +18,7 @@ class ViewControllerInfo: UIViewController {
     @IBOutlet var lblWeight: UILabel!
     @IBOutlet var lblDate: UILabel!
     @IBOutlet var lblNotes: UILabel!
+    var handle: AuthStateDidChangeListenerHandle?
     var user:Usuario!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,5 +42,21 @@ class ViewControllerInfo: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // [START auth_listener]
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // [START_EXCLUDE]
+            // [END_EXCLUDE]
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // [START remove_auth_listener]
+        Auth.auth().removeStateDidChangeListener(handle!)
+        // [END remove_auth_listener]
+    }
 
 }
