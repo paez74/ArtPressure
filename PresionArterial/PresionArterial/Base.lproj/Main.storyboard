@@ -189,6 +189,7 @@
                         <outlet property="btnRegistrarse" destination="5Pp-he-ei6" id="rdm-eb-1dV"/>
                         <outlet property="dpBirthday" destination="fBn-Gh-Bli" id="9fg-nW-wFv"/>
                         <outlet property="tfEmail" destination="woG-Ed-5gK" id="9Bb-Vr-NNS"/>
+                        <outlet property="tfLastname" destination="8CG-H4-exY" id="GsW-Um-CF6"/>
                         <outlet property="tfName" destination="oHD-EZ-gIJ" id="4be-ej-LZ4"/>
                         <outlet property="tfPassword" destination="g4p-1h-sgc" id="nbE-9i-rNr"/>
                         <outlet property="tfPasswordRepeat" destination="IHE-vb-IA0" id="c9Y-oO-6v3"/>
