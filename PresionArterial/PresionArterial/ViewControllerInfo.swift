@@ -41,7 +41,7 @@ class ViewControllerInfo: UIViewController {
                 print("Document data: \(dataDescription)")
                 let name = document.get("name") as! String
                 let last_name = document.get("last_name") as! String
-                self.lblName.text = name + last_name
+                self.lblName.text = name + " " + last_name
                 /// Todays Date
                 let now = Date()
                 /// Calender
@@ -54,7 +54,7 @@ class ViewControllerInfo: UIViewController {
                 formatter.dateFormat = "yyyy/MM/dd"
                 let bday2 = formatter.date(from: year + "/" + month + "/" + day)!
                 let age = calendar.dateComponents([.year], from:bday2, to: now)
-                self.lblAge.text = String(age.year!) + "años"
+                self.lblAge.text = String(age.year!) + " años"
             } else {
                 print("Document does not exist")
             }

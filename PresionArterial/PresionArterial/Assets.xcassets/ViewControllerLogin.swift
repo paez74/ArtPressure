@@ -16,7 +16,6 @@ class ViewControllerLogin: UIViewController ,UserRegister{
     var handle: AuthStateDidChangeListenerHandle?
     var loggedIn : Bool = false
     //var personaAuth:Autentificacion
-    var personaAuth = Autentificacion(correo: "a", contrasena: "a")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +33,6 @@ class ViewControllerLogin: UIViewController ,UserRegister{
     
     func guardarAutentificacion(){
         do{
-            let data = try PropertyListEncoder().encode(personaAuth)
-            try data.write(to: dataFilePath())
         }
         catch{
             print("Save failed")
@@ -45,8 +42,6 @@ class ViewControllerLogin: UIViewController ,UserRegister{
     func obtenerAutentificacion(){
         do{
             let data = try Data.init(contentsOf: dataFilePath())
-            personaAuth = try PropertyListDecoder().decode(Autentificacion.self, from: data)
-            login(email: personaAuth.correo, password: personaAuth.contrasena)
         }
         catch{
             print("Error reading or decoding file")
@@ -101,8 +96,6 @@ class ViewControllerLogin: UIViewController ,UserRegister{
         if identifier == "login" {
             login(email:tfEmail.text!, password: tfPass.text!)
             if loggedIn{
-                personaAuth.correo = tfEmail.text!
-                personaAuth.contrasena = tfPass.text!
                 //guardarAutentificacion()
                 print(tfEmail.text!)
                 print(tfPass.text!)
