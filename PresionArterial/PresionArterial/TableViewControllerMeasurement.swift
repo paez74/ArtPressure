@@ -146,7 +146,7 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
             } else {
                 print("Document successfully written!")
             }
-        }
+        }   
     }
 
     override func viewWillDisappear(_ animated: Bool) {

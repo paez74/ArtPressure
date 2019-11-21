@@ -69,6 +69,34 @@ class ViewControllerInfo: UIViewController {
             }
         }
     }
+    
+    func getBloodPressure(){
+        let db = Firestore.firestore();
+        // [START get_multiple_all]
+        db.collection("users").document(email)
+            .collection("bloodPressure").getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        let docInfo = document.data();
+                        let measure = docInfo["measurements"] as! [String: AnyObject];
+                        let measured = measure["measure3"] as! [String: AnyObject];
+                        let sistolic = measured["systolic"] as! Int;
+                        let diastolic = measured["diastolic"] as! Int;
+                        let date = docInfo["createdAt"] as! Timestamp;
+                        let gate = date.dateValue()
+                        let weight = docInfo["weight"] as! Double
+                        let notes = docInfo["notes"] as! String
+                        self.lblSystolic.text = String(sistolic)
+                        self.lblDistolic.text = String(diastolic)
+                        self.lblWeight.text = String(weight)
+                        self.lblNotes.text = String(notes)
+                        
+                    }
+                }
+        }
+    }
 
     
     func getCurrentUser() {
@@ -82,6 +110,7 @@ class ViewControllerInfo: UIViewController {
                 // if you have one. Use getTokenWithCompletion:completion: instead.
                 email = user.email
                 getUserInfo()
+                getBloodPressure()
                 print("Logged in!")
             }
         } else {
