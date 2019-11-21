@@ -20,7 +20,7 @@ class ViewControllerRegistro: UIViewController {
     @IBOutlet var tfPasswordRepeat: UITextField!
     @IBOutlet var btnRegistrarse: UIButton!
     @IBOutlet var dpBirthday: UIDatePicker!
-    
+
     var name : String!
     var lastname : String!
     var email : String!
@@ -33,7 +33,7 @@ class ViewControllerRegistro: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
     func createUser(){
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             // [START_EXCLUDE]
@@ -50,7 +50,7 @@ class ViewControllerRegistro: UIViewController {
             // [END_EXCLUDE]
         }
     }
-    
+
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if (sender as! UIButton) == btnRegistrarse{
             if validateData(){
@@ -61,7 +61,7 @@ class ViewControllerRegistro: UIViewController {
         }
         else {return true}
     }
-    
+
     func addUser(){
         name = tfName.text!
         email = tfEmail.text!
