@@ -595,6 +595,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
+                                    <action selector="logout:" destination="jUD-GQ-h9Z" eventType="touchUpInside" id="Rhg-1s-Opy"/>
                                     <segue destination="gui-5e-Y2H" kind="unwind" unwindAction="unwindApplicationWithUnwindSegue:" id="A5T-iW-Dyy"/>
                                 </connections>
                             </button>

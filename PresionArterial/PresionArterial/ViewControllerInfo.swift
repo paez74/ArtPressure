@@ -31,6 +31,15 @@ class ViewControllerInfo: UIViewController {
 
     }
     
+    @IBAction func logout(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+    
     func getUserInfo(){
         let db = Firestore.firestore();
         // [START get_multiple_all]
