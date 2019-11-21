@@ -54,10 +54,10 @@ class ViewControllerAddMeasure: UIViewController {
     // called every time interval from the timer
     @objc func timerAction() {
         counter += 1
-        lblTimer.text = "\(counter)"
+        lblTimer.text = "   " +  "\(counter)"
         if counter == 10 {
             counter = 0;
-            lblTimer.text = "Solo" + "\(pressionTaken) mas";
+            lblTimer.text = "Solo " + "\(pressionTaken) mas";
             timer.invalidate()
             createButton.isEnabled = true;
         }
@@ -66,12 +66,23 @@ class ViewControllerAddMeasure: UIViewController {
     func validateData() -> Bool{
         if tfSystolic.text! == "" ||
             tfDistolic.text! == "" ||
-            tfWeight.text! == "" 
+            tfWeight.text! == ""
         {
             let alerta = UIAlertController(title:"Error",message:"Todos los campos deben tener datos",preferredStyle: .alert)
             alerta.addAction(UIAlertAction(title:"OK",style: .cancel, handler:nil))
             present(alerta,animated:true,completion:nil)
             return false
+        }
+        else {
+            var intSys = Int(tfSystolic.text!)!
+            var intDis = Int(tfDistolic.text!)!
+            if  intSys < intDis{
+              let alerta = UIAlertController(title:"Error",message:"Presión sistolica no puede ser menor que la diastólica",preferredStyle: .alert)
+              alerta.addAction(UIAlertAction(title:"OK",style: .cancel, handler:nil))
+              present(alerta,animated:true,completion:nil)
+       
+            return false
+            }
         }
         return true
     }

@@ -16,6 +16,4 @@ target 'PresionArterial' do
 
   # Pods for PresionArterial
 pod 'Charts'
-pod 'Firebase/Auth'
-
 end

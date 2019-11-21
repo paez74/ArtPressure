@@ -19,4 +19,3 @@ class Measurement: NSObject {
     }
     
 }
-

@@ -13,14 +13,15 @@ import FirebaseCore
 import FirebaseFirestore
 
 class TableViewControllerMeasurement: UITableViewController,MeasurementRegister {
-    
+    var email : String!
     var measurementList = [Measurements]()
     var formatter = DateFormatter()
     var handle: AuthStateDidChangeListenerHandle?
-    var email : String!
+    //let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //let userEmail = defaults.value(forKey: "email") as? String
         self.title = "Mediciones Pasadas"
         formatter.dateFormat = "yyyy/MM/dd HH:mm"
         // [START setup]
@@ -28,6 +29,29 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
         
         Firestore.firestore().settings = settings
         // [END setup]
+       
+        if Auth.auth().currentUser != nil {
+                // User is signed in.
+                let user = Auth.auth().currentUser
+                if let user = user {
+                    // The user's ID, unique to the Firebase project.
+                    // Do NOT use this value to authenticate with your backend server,
+                    // if you have one. Use getTokenWithCompletion:completion: instead.
+                    email = user.email
+                    print("Logged in!")
+                }
+            } else {
+                // No user is signed in.
+                // ...
+                print("Not logged in!")
+            }
+           
+            getBloodPressure()
+        }
+    
+    
+    func getCurrentUser() {
+        // [START auth_listener]
         if Auth.auth().currentUser != nil {
             // User is signed in.
             let user = Auth.auth().currentUser
@@ -36,6 +60,8 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
                 // Do NOT use this value to authenticate with your backend server,
                 // if you have one. Use getTokenWithCompletion:completion: instead.
                 email = user.email
+                //getUserInfo()
+                //getBloodPressure()
                 print("Logged in!")
             }
         } else {
@@ -43,10 +69,7 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
             // ...
             print("Not logged in!")
         }
-       
-        getBloodPressure()
     }
-    
     
     func getBloodPressure(){
         let db = Firestore.firestore();
@@ -82,7 +105,11 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
         // to do manipulate user
         super.viewWillAppear(animated)
 
-        
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+            self.tableView.reloadData()
+            //let user = Auth.auth().currentUser
+        }
     }
         // [END auth_
     // MARK: - Table view data source
@@ -146,12 +173,14 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
             } else {
                 print("Document successfully written!")
             }
-        }   
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(handle!)
     }
     // MARK: - Navigation
+
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier ==  "addMeasure"{

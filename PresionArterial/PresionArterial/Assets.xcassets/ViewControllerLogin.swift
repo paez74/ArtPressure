@@ -12,28 +12,28 @@ import FirebaseAuth
 class ViewControllerLogin: UIViewController ,UserRegister{
 
     @IBOutlet weak var tfEmail: UITextField!
-    @IBOutlet weak var tfPass: UITextField!
-    var handle: AuthStateDidChangeListenerHandle?
-    var loggedIn : Bool = false
-    //var personaAuth:Autentificacion
     
+    @IBOutlet weak var tfPass: UITextField!
+    
+    /*@IBAction func actBtLogin(_ sender: UIButton) {
+        login(email:tfEmail.text!, password: tfPass.text!)
+    }*/
+    @IBAction func btnLogin(_ sender: UIButton) {
+        login(email:tfEmail.text!, password: tfPass.text!)
+    }
+    
+    let defauls = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Do any additional setup after loading the view.
     }
-    
-    func dataFilePath() -> URL {
-        let url = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
-        let pathArchivo = url.appendingPathComponent("Autentificacion.plist")
-        return pathArchivo
-    }
-    
     @IBAction func unwindRegistro(unwindSegue: UIStoryboardSegue){
         
     }
     
     @IBAction func unwindApplication(unwindSegue: UIStoryboardSegue){
-        loggedIn = false
+        
     }
     
     func addUser(user:Usuario)-> Void{
@@ -44,48 +44,44 @@ class ViewControllerLogin: UIViewController ,UserRegister{
         print(user.email!)
     }
     
+    func doSegue(){
+           performSegue(withIdentifier: "login", sender: nil)
+       }
+    
+    
     func login(email:String, password:String) {
-        //let email = tfEmail.text!
-        //let password = tfPass.text!
-        
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-            guard let strongSelf = self else { return }
-            // [START_EXCLUDE]
+    
+    
+    Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+        guard let strongSelf = self else { return }
+        // [START_EXCLUDE]
 
-                if let error = error {
-                    let alert = UIAlertController(title: "Error", message: "Password o email incorrectos.", preferredStyle: .alert)
-                    
-                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                    
-                    strongSelf.present(alert, animated: true)
-                    strongSelf.loggedIn = false
-                    return
-                } else {
-                    //strongSelf.personaAuth.correo = withEmail
-                    //strongSelf.personaAuth.contrasena = password
-                    //strongSelf.guardarAutentificacion()
-                    
-                    strongSelf.loggedIn = true
-                    
-            }
-            // [END_EXCLUDE]
+            if let error = error {
+                let alert = UIAlertController(title: "Error", message: "Password o email incorrectos.", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                
+                strongSelf.present(alert, animated: true)
+                //strongSelf.loggedIn = false
+                return
+            } else {
+                //strongSelf.personaAuth.correo = withEmail
+                //strongSelf.personaAuth.contrasena = password
+                //strongSelf.guardarAutentificacion()
+                
+                //strongSelf.loggedIn = true
+                strongSelf.defauls.set(email, forKey: "email")
+                strongSelf.doSegue()
+                //prepare(for: vcLogin, sender: self)
+                
+                //return true
+                
         }
+        // [END_EXCLUDE]
+        
     }
-    
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == "login" {
-            login(email:tfEmail.text!, password: tfPass.text!)
-            if loggedIn{
-                //guardarAutentificacion()
-                print(tfEmail.text!)
-                print(tfPass.text!)
-            }
-            return loggedIn
-        }else{
-            return true
-        }
     }
-    
+        
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
