@@ -17,6 +17,7 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
     var measurementList = [Measurements]()
     var formatter = DateFormatter()
     var handle: AuthStateDidChangeListenerHandle?
+    var email : String!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +28,21 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
         
         Firestore.firestore().settings = settings
         // [END setup]
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+            let user = Auth.auth().currentUser
+            if let user = user {
+                // The user's ID, unique to the Firebase project.
+                // Do NOT use this value to authenticate with your backend server,
+                // if you have one. Use getTokenWithCompletion:completion: instead.
+                email = user.email
+                print("Logged in!")
+            }
+        } else {
+            // No user is signed in.
+            // ...
+            print("Not logged in!")
+        }
        
         getBloodPressure()
     }
@@ -35,7 +51,7 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
     func getBloodPressure(){
         let db = Firestore.firestore();
             // [START get_multiple_all]
-        db.collection("users").document("rubengarzah@hotmail.com")
+        db.collection("users").document(email)
             .collection("bloodPressure").getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
@@ -66,11 +82,7 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
         // to do manipulate user
         super.viewWillAppear(animated)
 
-        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            
-            self.tableView.reloadData()
-            //let user = Auth.auth().currentUser
-        }
+        
     }
         // [END auth_
     // MARK: - Table view data source
@@ -108,7 +120,7 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
         let createdAt: Timestamp = Timestamp(date: createdAtTime)
         self.formatter.dateFormat = "yyyy/MM/dd HH:mm"
         let db = Firestore.firestore();
-        db.collection("users").document("rubengarzah@hotmail.com")
+        db.collection("users").document(email)
             .collection("bloodPressure").addDocument(data:[
             "createdAt": createdAt,
             "measurements": [
@@ -138,10 +150,8 @@ class TableViewControllerMeasurement: UITableViewController,MeasurementRegister 
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        Auth.auth().removeStateDidChangeListener(handle!)
     }
     // MARK: - Navigation
-
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier ==  "addMeasure"{

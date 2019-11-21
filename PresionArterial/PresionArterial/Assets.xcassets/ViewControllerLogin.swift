@@ -13,6 +13,7 @@ class ViewControllerLogin: UIViewController ,UserRegister{
 
     @IBOutlet weak var tfEmail: UITextField!
     @IBOutlet weak var tfPass: UITextField!
+    var handle: AuthStateDidChangeListenerHandle?
     var loggedIn : Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,22 @@ class ViewControllerLogin: UIViewController ,UserRegister{
             // To do get user from database, and check password
             vistaSig.user = Usuario(name:"Gustavo Paez",email:"paez74@live.com.mx",username:"paez74",bday:formatter.date(from: "1997/10/08 22:31")!)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // [START auth_listener]
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            // [START_EXCLUDE]
+            // [END_EXCLUDE]
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // [START remove_auth_listener]
+        Auth.auth().removeStateDidChangeListener(handle!)
+        // [END remove_auth_listener]
     }
  
 
